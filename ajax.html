@@ -54,8 +54,11 @@
 				`
 				document.querySelector('#simpson').innerHTML = simpsonHtml;
 
-				console.log(simpsonHtml)
-				
+				const button = document.createElement("button")
+				button.innerHTML = "clique ici"
+				button.onclick = (event => fetchSimpsons() )
+
+				document.querySelector('#simpson').appendChild(button)
 
 				return result
 
